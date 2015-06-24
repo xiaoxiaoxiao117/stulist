@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% block title %} 
+  修改学生名单信息
+{% end %}
+
+{% block content %} 
+	<div class="a_box">
+	<p class="a_login">
+        <a href="/coulist">返回管理页面</a>
+    </p>
+	</div>
+	<div class="c_box">
+	<div class="ziti1">
+	<form action="/couedit/{{course['cou_sn']}}" method="post">
+    <p>学&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  号:<input type="text" name="cou_no" value="{{course['cou_no']}}"/></p>
+    <p>姓&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  名:<input type="text" name="name" value="{{course['name']}}"/> </p>
+    <p>出生日期:<input type="text" name="pice" value="{{course['pice']}}"/> </p>
+    <p>性&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  别:<input type="text" name="sex" value="{{course['sex']}}"/></p>
+    <p>班&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  级:<input type="text" name="notes" value="{{course['notes'] if course['notes'] is not None else ''}}"/></p>
+    <input type="submit" value="提 交"/>
+    </form>
+    </div>
+    </div>
+	
+{% end %}

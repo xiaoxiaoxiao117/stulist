@@ -1,0 +1,86 @@
+{% extends "base.html" %}
+{% block title %} 
+  天津工业大学学生名单管理  
+{% end %}
+<link rel="stylesheet" href="/static/css/zzsc.css" type="text/css" media="screen" />
+    <script type="text/javascript" src="/static/js/jquery.min.js"></script>
+    <script type="text/javascript" src="/static/js/zzsc.js"></script>
+{% block content %}
+	<div id="header">
+  <div class="wrap">
+   <div id="slide-holder">
+    <div id="slide-runner">
+      <a href="http://sc.chinaz.com/" target="_blank"><img id="slide-img-1" src="static/images/a1.jpg" class="slide" alt="" /></a>
+      <a href="http://sc.chinaz.com/" target="_blank"><img id="slide-img-2" src="static/images/a2.jpg" class="slide" alt="" /></a>
+      <a href="http://sc.chinaz.com/" target="_blank"><img id="slide-img-3" src="static/images/a3.jpg" class="slide" alt="" /></a>
+      <a href="http://sc.chinaz.com/" target="_blank"><img id="slide-img-4" src="static/images/a4.jpg" class="slide" alt="" /></a>
+      <a href="http://sc.chinaz.com/" target="_blank"><img id="slide-img-5" src="static/images/a5.jpg" class="slide" alt="" /></a>
+      <a href="http://sc.chinaz.com/" target="_blank"><img id="slide-img-6" src="static/images/a6.jpg" class="slide" alt="" /></a>
+      <a href="http://sc.chinaz.com/" target="_blank"><img id="slide-img-7" src="static/images/a4.jpg" class="slide" alt="" /></a> 
+      <div id="slide-controls">
+       <p id="slide-client" class="text"><strong></strong><span></span></p>
+       <p id="slide-desc" class="text"></p>
+       <p id="slide-nav"></p>
+      </div>
+    </div>
+   </div>
+   <script type="text/javascript">
+    if(!window.slider) {
+    var slider={};
+  }
+
+  slider.data= [
+    {
+        "id":"slide-img-1", 
+        "client":"图片信息",
+        "desc":"美丽的天津工业大学公共教学楼"
+    },
+    {
+        "id":"slide-img-2",
+        "client":"图片信息",
+        "desc":"全亚洲最长的图书馆"
+    },
+    {
+        "id":"slide-img-3",
+        "client":"图片信息",
+        "desc":"东苑一角"
+    },
+    {
+        "id":"slide-img-4",
+        "client":"图片信息",
+        "desc":"体育馆"
+    },
+    {
+        "id":"slide-img-5",
+        "client":"图片信息",
+        "desc":"泮湖晚霞"
+    },
+    {
+        "id":"slide-img-6",
+        "client":"图片信息",
+        "desc":"体育场风采"
+    },
+    {
+        "id":"slide-img-7",
+        "client":"图片信息",
+        "desc":"西苑学生宿舍"
+    }
+  ];
+   </script>
+    </div>
+</div>
+<div class="b_box">
+  <marquee height="213" direction="up" hspace="100" scrollamount="1"   bgcolor="#00FF99"
+    <p><font size="3" color="#ff4500">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;天津工业大学（Tianjin Polytechnic University缩写：TJPU），简称天工大，是天津市重点建设的公办全日制高等学校、天津市重点建设的全日制普通高等学校。学校历史悠久，最早的系始建于1912年，是一所以工为主，工理结合，工、理、文、管、经、法协调发展的多科性大学，拥有培养学士、硕士、博士的完整教育体系，参与国家“863”、“973”计划，在教育部首批本科教学评估中获得优秀，被教育部评为“全国毕业生就业典型经验高校”。</font></p> 
+    <p><font size="3" color="#ff4500">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;截至2013年，学校总占地面积230.8102万平方米，总建筑面积97.0527万平方米，下设1个学部、15个学院，全日制在校生28000余人，在校研究生近2000人，留学生约300人，图书馆拥有藏书212.75余万册。</font></p>
+    <p><font size="3" color="#ff4500">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;截至2013年，学校承担和完成了国防高科技、国家攻关、“863”、“973”、国家自然科学基金、国家火炬计划和省部级哲学和社会科学基金等科研项目近千项。学校彰显现代纺织和产学研办学特色，形成了以纺织复合材料、中空纤维膜分离技术、特种功能纤维材料、纺织油剂助剂、半导体照明与材料、机电设备集成制造等研究为特色的科研优势，多项科研成果被成功应用于节能环保、新材料等国家战略性新兴产业和国防高科技产业。学校科研取得了标志性和突破性成果，获得国家级科技奖励6项，连续多年获得国家科技发明奖和科技进步奖，国际、国内发明专利等500余项，被SCI、EI、ISTP三大索引摘录论文数量逐年递增，每年到位科技经费均保持在1亿元以上。该校教师发表学术论文2119篇，其中SCI、EI、ISTPI等三大检索收录论文769篇，出版教材和著作26部材。</font></p>
+    <p><font size="3" color="#ff4500">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;截至2013年，学校拥有1个省部共建国家重点实验室培育基地，2个教育部重点实验室、5个天津市重点实验室，2个教育部工程研究中心和4个天津市工程技术中心、1个天津市技术推广中心以及1个天津市人文社会科学重点研究基地。</font></p>
+    <p><font size="3" color="#ff4500">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;截至2013年，天津工业大学图书馆建筑面积约5.3万平方米，共有阅览座位4000余个，电子阅览位近600个。馆藏中外文纸质图书234万余册，中外文期刊1500余种，报纸90余种。电子图书130余万种；中文电子期刊10000余种；英文电子期刊25000余种。先后引进近80多个数据库，包括CNKI中国知网、中文社会科学引文索引 CSSCI、读秀学术搜索等中文数据库；以及《SCI》(科学引文索引)、《IEL》（IEE/IEEE电子图书馆）、Elseiver公司SDOS、《SciFinder Scholar》（化学文摘网络版）、《EI》（工程索引）等英文全文及文摘数据库；并组织力量制作《天津工业大学博硕士学位论文全文库》、《纺织特色外文文献全文数据库》、《服装信息平台数据库》等自建数据库。</font></p>
+    <p><font size="3" color="#ff4500">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;《天津工业大学学报》是由天津市教育委员会主管、天津工业大学主办的自然科学版学术类期刊，1982年创刊，双月刊，国内外公开发行。本刊为中文核心期刊、中国科技核心期刊，并被评为天津市优秀期刊。《天津工业大学学报》加入美国《世界纺织文摘》、美国《化学文摘：光盘版》、俄罗斯《文摘杂志》、美国《剑桥科学文摘：工程技术》、美国《乌利希期刊指南》共5种国际检索机构，并全文载入《中国学术期刊(光盘版)》、《中国知网》、《万方数据资源系统数字化期刊群》、《中文科技期刊数据库》和《台湾中文电子期刊服务—思博网（CEPS）》等大型数据库。</font></p>
+    <p><font size="3" color="#ff4500">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;截至2013年，学校有2个一级学科博士点、14个二级学科博士点、20个一级学科硕士点、72个二级学科硕士点和4个专业硕士学位点（含15个工程硕士授予领域），有53个本科专业，其中6个国家级特色专业、15 个天津市品牌专业、6 个天津市战略性新兴产业相关专业，有25个高职专业。设有3个博士后流动站。学校拥有1个国家重点学科、7个天津市重点学科、3个天津市“重中之重”学科、1个天津市重点发展学科。</font></p>
+    <p><font size="3" color="#ff4500">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font></p>
+    <p><font size="3" color="#ff4500">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font></p>
+  </marquee>
+  <font color="#000"><marquee width="100%" bgcolor="#CCCCCC">@信息1304李德辉，版权所有，，违者必究。&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;犯我版权者，虽远必诛。</marquee></font>
+</div>
+{% end %}
