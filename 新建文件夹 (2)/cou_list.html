@@ -1,0 +1,64 @@
+{% extends "base.html" %}
+{% block title %} 
+  管理名单  
+{% end %}
+
+{% block content %}
+        <!--<div class="b_box">
+        <img src="/static/images/img1.jpg"  width= "350" height="250"/>
+        	<div class="ziti">黑鸭饭</div>
+          <p class="b_login">
+            <a href="couedit/new">添加菜单</a>
+          </p>
+        </div>-->
+        <div class="a_box">
+        	<p class="a_login">
+            <a href="couedit/new">新增学生</a>
+          </p>
+        </div>
+        
+
+	<div class="a_box">
+		
+	</div>
+	<div class="c_box">
+	<table class="ziti1">
+		<tr>
+			<th>学生信息预览</th>
+		</tr>
+		<tr>
+			<td>学号</td>
+			<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+			<td>姓名</td>
+			<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+			<td>出生日期</td>
+			<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+			<td>性别</td>
+			<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+			<td>班级</td>
+		</tr>
+		{% for cou in courses %}
+		<tr>
+			<td>{{ cou['cou_no'] }}</td>
+			<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+			<td>{{ cou['name'] }}</td>
+			<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+			<td>{{ cou['pice'] }}</td>
+			<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+			<td>{{ cou['sex'] }}</td>
+			<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+			<td>{{ cou['notes'] if cou['notes'] is not None else '' }}</td>
+			<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+			<td >
+				<a href="couedit/{{cou['cou_sn']}}"> 修改该学生信息 </a> 
+				
+			</td>
+			<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+			<td>
+				<a href="coudel/{{cou['cou_sn']}}"> 删除该学生信息 </a>	
+			</td>
+		</tr>
+		{% end %}
+	</table> 
+	</div>
+{% end %}
